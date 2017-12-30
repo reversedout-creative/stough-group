@@ -445,6 +445,9 @@ html, body { height: 100%; width: 100%; }
 @media(max-width: 991px){
 	ul.slimmenu li.active span.sub-toggle i,
 	ul.slimmenu li.active a { color: #000000; }
+	#mainNav .container {
+		padding-bottom: 10px;
+	}
 	.main-menu .slimmenu {
 		position: absolute;
 		left: 0;
