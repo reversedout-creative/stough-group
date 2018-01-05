@@ -659,7 +659,7 @@ html, body { height: 100%; width: 100%; }
 	font-size: 18px;
 	line-height: 26px;
 }
-
+.contact-form textarea::-webkit-input-placeholder,
 .contact-form input[type="tel"]::-webkit-input-placeholder, 
 .contact-form input[type="number"]::-webkit-input-placeholder,
 .contact-form input[type="email"]::-webkit-input-placeholder,
@@ -667,6 +667,7 @@ html, body { height: 100%; width: 100%; }
 	color: #ffffff;
 	opacity: 1;
 }
+.contact-form textarea::-moz-placeholder,
 .contact-form input[type="tel"]::-moz-placeholder,
 .contact-form input[type="number"]::-moz-placeholder,
 .contact-form input[type="email"]::-moz-placeholder,
@@ -674,6 +675,7 @@ html, body { height: 100%; width: 100%; }
 	color: #ffffff;
 	opacity: 1;
 }
+.contact-form textarea:-ms-input-placeholder,
 .contact-form input[type="tel"]:-ms-input-placeholder,
 .contact-form input[type="number"]:-ms-input-placeholder,
 .contact-form input[type="email"]:-ms-input-placeholder,
@@ -681,6 +683,7 @@ html, body { height: 100%; width: 100%; }
 	color: #ffffff;
 	opacity: 1;
 }
+.contact-form textarea:-moz-placeholder,
 .contact-form input[type="tel"]:-moz-placeholder,
 .contact-form input[type="number"]:-moz-placeholder,
 .contact-form input[type="email"]:-moz-placeholder,
