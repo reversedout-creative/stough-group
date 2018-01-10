@@ -16,13 +16,6 @@ CSS, HTML and Design Files are all Copyright 2017-2018.
 And God said "Let there be code..."
 ***********************************************************************************************************/
 /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, /*table,*/ caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-ol, ul, li {list-style: inside;}
-ol li {list-style: inside decimal;}
-blockquote, q {quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after {content: '';content: none; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Box  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 input[type="text"],
 input[type="email"],
@@ -69,8 +62,7 @@ textarea { height: 100px; }
 ::-moz-selection { background: #ffffff; color: #000000; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Button  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .btn { padding: 0; margin: 0; white-space: inherit; }
-.btn-link a ,
-.btn.link a {
+.btn-link a, .btn.link a {
 	font-family: 'PT Serif', serif;
 	font-weight: 700;
     display: inline-block;
@@ -80,8 +72,7 @@ textarea { height: 100px; }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
 	outline: none;
 }
-.btn a,
-input[type="submit"] {
+.btn a, input[type="submit"] {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;	
     cursor: pointer;
@@ -474,7 +465,7 @@ html, body { height: 100%; width: 100%; }
 		transform: none;
 		background: rgba(0,0,0,0.8);
 	}
-	.logo-image img {
+	.banner-bg .logo-image img {
 		max-width: 250px;
 	}
 	body,hrml { height: inherit; }
@@ -1025,11 +1016,155 @@ html, body { height: 100%; width: 100%; }
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.commercials-ctm p {
+		font-size: 16px;
+		line-height: 26px;
+	}
 
 }
 @media(max-width: 600px) {
 	.internal-banner-contain h1 {
 		font-size: 40px;
 		line-height: 40px;
+	}
+}
+
+/* ----- Team Page ----- */
+.team-member-sectin h3 {
+	text-align: center;
+	font-weight: 700;
+}
+.team-member-sectin ul {
+	text-align: center;
+}
+.team-member-sectin ul li {
+	list-style: none;
+	text-align: center;
+}
+.all-memner-list {
+	padding-top: 40px;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+.all-memner-list li {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin: 1%;
+}
+.team {
+	position: relative;
+	text-align: left;
+	margin-bottom: 25px;
+}
+.member-image {
+	height: 410px;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.member-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.member-dtl {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:0 auto;
+	padding: 15px;
+	color: #ffffff;
+}
+.member-dtl a {
+	color: #ffffff;
+	display: block;
+}
+.member-dtl a:hover {
+	color: #0090ff;
+}
+.member-dtl h4 {
+	font-weight: 700;
+}
+.member-dtl h4,
+.member-dtl h5 {
+	padding: 0;
+	margin: 0;
+	letter-spacing: normal;
+}
+.tel-number {
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 15px;
+}
+.member-dtl {	
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+.member-dtl span {
+	font-size: 18px;
+	line-height: 28px;
+}
+.all-memner-list li:hover .member-dtl {
+	padding-bottom: 30px;
+}
+.all-memner-list li,
+.all-memner-list li .member-dtl,
+.all-memner-list li:hover .member-dtl {
+	-webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+.all-member-image .container-fluid ,
+.all-member-image .container-fluid .row {
+	padding: 0;
+	margin: 0;
+}
+.all-member-image .images {
+	padding: 5px;
+}
+.all-member-image .images img {
+	width: 100%;
+}
+@media(max-width: 1200px){
+	.all-memner-list {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+	.all-memner-list li:hover .member-dtl {
+		padding-bottom: 15px;
+	}
+}
+@media(max-width: 991px){
+	.member-image {
+		height: 310px;
+	}
+	.tel-number {
+		margin-top: 10px;
+	}
+}
+@media(max-width: 767px){
+	.all-memner-list li {
+		width: 47%;
+	}
+	.member-image {
+		height: 400px;
+	}
+	.all-member-image .images {
+		padding:0;
+	}
+}
+@media(max-width: 480px){
+	.all-memner-list li {
+		width: 100%;
+		max-width: 300px;
 	}
 }
